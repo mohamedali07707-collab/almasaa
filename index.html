@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Almasa - الماسة | Your Journey. Our Care.</title>
+  <meta name="description" content="Almasa Travel Agency - Creating memorable journeys since 2015. Custom travel packages, visa services, flight & hotel bookings, and local tours.">
+  <meta name="keywords" content="travel agency, Almasa, الماسة, travel packages, visa services, flight booking, hotel booking, tours">
+  <meta name="author" content="Almasa Travel">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Almasa - الماسة | Your Journey. Our Care.">
+  <meta property="og:description" content="Creating memorable journeys since 2015. Custom travel packages, visa services, and local tours.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mohamedali.site">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✈%3C/text%3E%3C/svg%3E">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Almasa</span>
+        <span class="logo-text-ar">الماسة</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a></li>
+        <li><a href="services.html" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a></li>
+        <li><a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+      </ul>
+      
+      <!-- Language Switcher -->
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">عربي</button>
+      </div>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="highlight">Almasa</span> — الماسة
+        </h1>
+        <p class="hero-subtitle" data-en="Your journey. Our care." data-ar="رحلتك. اهتمامنا.">Your journey. Our care.</p>
+        
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary" data-en="Book Your Trip" data-ar="احجز رحلتك">Book Your Trip</a>
+          <a href="#destinations" class="btn btn-secondary" data-en="Explore Destinations" data-ar="استكشف الوجهات">Explore Destinations</a>
+        </div>
+      </div>
+      
+      <div class="hero-3d">
+        <div id="airplane-canvas"></div>
+      </div>
+    </div>
+    
+    <div class="scroll-down">
+      <span data-en="Scroll" data-ar="مرر">Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Counters Section -->
+  <section class="counters-section">
+    <div class="container">
+      <div class="counters-grid">
+        <div class="counter-item reveal">
+          <div class="counter-number" data-target="5000">0</div>
+          <div class="counter-label" data-en="Trips Completed" data-ar="رحلة مكتملة">Trips Completed</div>
+        </div>
+        <div class="counter-item reveal delay-1">
+          <div class="counter-number" data-target="3500">0</div>
+          <div class="counter-label" data-en="Happy Clients" data-ar="عميل سعيد">Happy Clients</div>
+        </div>
+        <div class="counter-item reveal delay-2">
+          <div class="counter-number" data-target="10">0</div>
+          <div class="counter-label" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-en="Featured Destinations" data-ar="الوجهات المميزة">Featured Destinations</h2>
+        <p class="section-subtitle" data-en="Discover amazing places around the world with our curated travel packages" data-ar="اكتشف أماكن مذهلة حول العالم مع حزم السفر المصممة لدينا">Discover amazing places around the world with our curated travel packages</p>
+      </div>
+      
+      <div class="destinations-grid">
+        <div class="destination-card reveal">
+          <div class="destination-placeholder">
+            <img src="./Travel Inspo.jpg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="destination-overlay">
+            <h3 class="destination-title" data-en="Dubai" data-ar="دبي">Dubai</h3>
+            <p class="destination-price" data-en="From $899" data-ar="من 899 دولار">From $899</p>
+          </div>
+        </div>
+        
+        <div class="destination-card reveal delay-1">
+          <div class="destination-placeholder">
+            <img src="./Overwater Bungalows in the Maldives.jpg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="destination-overlay">
+            <h3 class="destination-title" data-en="Maldives" data-ar="جزر المالديف">Maldives</h3>
+            <p class="destination-price" data-en="From $1,499" data-ar="من 1,499 دولار">From $1,499</p>
+          </div>
+        </div>
+        
+        <div class="destination-card reveal delay-2">
+          <div class="destination-placeholder">
+            <img src="./Turkey🇹🇷❤️.jpg" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="destination-overlay">
+            <h3 class="destination-title" data-en="Turkey" data-ar="تركيا">Turkey</h3>
+            <p class="destination-price" data-en="From $699" data-ar="من 699 دولار">From $699</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-en="How It Works" data-ar="كيف يعمل">How It Works</h2>
+        <p class="section-subtitle" data-en="Planning your perfect trip has never been easier" data-ar="لم يكن التخطيط لرحلتك المثالية أسهل من ذلك">Planning your perfect trip has never been easier</p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <span class="step-number">1</span>
+          <h3 class="step-title" data-en="Choose Destination" data-ar="اختر الوجهة">Choose Destination</h3>
+          <p class="step-description" data-en="Browse our curated destinations and find your perfect getaway" data-ar="تصفح وجهاتنا المصممة واعثر على منتجعك المثالي">Browse our curated destinations and find your perfect getaway</p>
+        </div>
+        
+        <div class="step-card reveal delay-1">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          </div>
+          <span class="step-number">2</span>
+          <h3 class="step-title" data-en="Customize Package" data-ar="خصص الحزمة">Customize Package</h3>
+          <p class="step-description" data-en="Work with our experts to tailor your trip to your preferences" data-ar="اعمل مع خبرائنا لتخصيص رحلتك حسب تفضيلاتك">Work with our experts to tailor your trip to your preferences</p>
+        </div>
+        
+        <div class="step-card reveal delay-2">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="step-number">3</span>
+          <h3 class="step-title" data-en="Book & Enjoy" data-ar="احتم واستمتع">Book & Enjoy</h3>
+          <p class="step-description" data-en="Confirm your booking and get ready for an unforgettable journey" data-ar="أكد حجزك واستعد لرحلة لا تُنسى">Confirm your booking and get ready for an unforgettable journey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: var(--gradient-hero);">
+    <div class="container" style="text-align: center;">
+      <h2 class="reveal" style="color: var(--dark-blue); margin-bottom: 1rem;" data-en="Ready to Start Your Journey?" data-ar="هل أنت مستعد لبدء رحلتك؟">Ready to Start Your Journey?</h2>
+      <p class="reveal" style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-en="Let us help you create unforgettable memories. Contact us today for a personalized travel experience." data-ar="دعنا نساعدك في إنشاء ذكريات لا تُنسى. تواصل معنا اليوم للحصول على تجربة سفر مخصصة.">Let us help you create unforgettable memories. Contact us today for a personalized travel experience.</p>
+      <a href="contact.html" class="btn btn-primary reveal" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Almasa — الماسة</div>
+          <p class="footer-description" data-en="Your trusted travel partner since 2015. Creating memorable journeys for families and explorers worldwide." data-ar="شريك السفر الموثوق لديك منذ عام 2015. نخلق رحلات لا تُنسى للعائلات والمستكشفين حول العالم.">Your trusted travel partner since 2015. Creating memorable journeys for families and explorers worldwide.</p>
+        </div>
+        
+        <div class="footer-links-section">
+          <h4 class="footer-title" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+            <li><a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+            <li><a href="services.html" data-en="Services" data-ar="الخدمات">Services</a></li>
+            <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-section">
+          <h4 class="footer-title" data-en="Contact" data-ar="اتصل بنا">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@mohamedali.site">info@mohamedali.site</a></li>
+            <li><a href="https://mohamedali.site">mohamedali.site</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Almasa Travel. All rights reserved. | <a href="https://mohamedali.site">mohamedali.site</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script>
+    // Language Switcher Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const langBtns = document.querySelectorAll('.lang-btn');
+      const html = document.documentElement;
+      
+      // Check for saved language preference
+      const savedLang = localStorage.getItem('almasa-lang') || 'en';
+      setLanguage(savedLang);
+      
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.dataset.lang;
+          setLanguage(lang);
+          localStorage.setItem('almasa-lang', lang);
+        });
+      });
+      
+      function setLanguage(lang) {
+        // Update buttons
+        langBtns.forEach(b => b.classList.remove('active'));
+        document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+        
+        // Update HTML attributes
+        if (lang === 'ar') {
+          html.setAttribute('dir', 'rtl');
+          html.setAttribute('lang', 'ar');
+        } else {
+          html.setAttribute('dir', 'ltr');
+          html.setAttribute('lang', 'en');
+        }
+        
+        // Update all translatable elements
+        document.querySelectorAll('[data-en][data-ar]').forEach(el => {
+          el.textContent = el.dataset[lang];
+        });
+        
+        // Update active nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.dataset[lang]) {
+            link.textContent = link.dataset[lang];
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+
